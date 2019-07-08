@@ -1,8 +1,8 @@
 # 📁 Directories
 
-alias cdd='cd ~/dev'
-alias cdw="cdd; cd work"
-alias cdc='cdw; cd codelytv'
+alias cdr='cd ~/dev'
+alias cdw="cdr; cd work"
+alias cda='cdw; cd agency'
 
 # ⚙️ Utilities
 

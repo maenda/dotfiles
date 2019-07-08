@@ -1,43 +1,43 @@
 {
-    // ⚙️ Common settings
-    "workbench.startupEditor": "newUntitledFile",
-    "terminal.external.osxExec": "iTerm.app",
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "search.useGlobalIgnoreFiles": true,
-    "files.autoSave": "onFocusChange",
-    "files.associations": {
-        "Dockerfile-*": "dockerfile"
-    },
-    // ✍️ Editor
-    "editor.minimap.enabled": false,
-    "editor.formatOnSave": true,
-    "editor.fontFamily": "Hack, Menlo, Monaco, monospace",
-    "editor.fontSize": 16,
-    "editor.lineHeight": 32,
-    "editor.rulers": [
-        120
-    ],
-    "editor.wordWrap": "on",
-    "editor.wrappingIndent": "indent",
-    "workbench.editor.highlightModifiedTabs": true,
-    "workbench.tree.horizontalScrolling": true,
-    // ⬛ Terminal
-    "terminal.integrated.fontFamily": "Hack, Menlo, Monaco, monospace",
-    "terminal.integrated.fontSize": 16,
-    "terminal.integrated.lineHeight": 1.4,
-    // 👨‍💻 Programming languages
-    "php.executablePath": "/usr/local/bin/php",
-    // 🐙 Git
-    "git.autofetch": true,
-    "git.alwaysSignOff": true,
-    "git.defaultCloneDirectory": "~/dev",
-    "git.fetchOnPull": true,
-    "git.rebaseWhenSync": true,
-    "git.showPushSuccessNotification": true,
-    // 🎨 CodelyTV theme draft
-    "workbench.colorCustomizations": {
-        "focusBorder": "#10fb7a",
-    },
-    "window.zoomLevel": 0
+  "editor.tabSize": 2,
+  "editor.detectIndentation": true,
+  "workbench.colorTheme": "One Dark Pro",
+  "files.trimTrailingWhitespace": true,
+  "typescript.check.npmIsInstalled": false,
+  "window.nativeTabs": false,
+  "workbench.startupEditor": "none",
+  "window.zoomLevel": 0,
+  "extensions.ignoreRecommendations": false,
+  "phpcs.standard": "PSR2",
+  "editor.rulers": [80, 120],
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true,
+    "suppressWelcomeNotice": true
+  },
+  "markdown.extension.preview.autoShowPreviewToSide": false,
+  "files.insertFinalNewline": true,
+  "files.associations": {
+    "*.es": "javascript"
+  },
+  "editor.renderWhitespace": "all",
+  "gitlens.keymap": "none",
+  "github.hosts": [
+    {
+      "host": "https://github.com",
+      "username": "oauth",
+      "token": "system"
+    }
+  ],
+  "files.exclude": {
+    "**/.vscode": true
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "liveshare.featureSet": "insiders",
+  "typescript.validate.enable": false,
+  "javascript.validate.enable": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "prettier.stylelintIntegration": true,
+  "editor.formatOnSave": true
 }
