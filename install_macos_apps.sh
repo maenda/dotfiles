@@ -11,15 +11,11 @@
 brew tap homebrew/cask-versions
 
 declare -a brew_cask_apps=(
-  'java'
-  'visualvm'
   'google-chrome'
   'the-unarchiver'
   'vlc'
   'spotify'
   'istat-menus'
-  'rocket'
-  'contexts'
   'paragon-ntfs'
   'noti'
   'caffeine'
@@ -27,7 +23,6 @@ declare -a brew_cask_apps=(
   'dropbox'
   'google-backup-and-sync'
   'slack'
-  'whatsapp'
   'sketchbook'
   'docker'
   'postman'
@@ -35,8 +30,7 @@ declare -a brew_cask_apps=(
   'sourcetree'
   'jetbrains-toolbox'
   'visual-studio-code'
-  'sequel-pro'
-  '1password6'
+  '1password7'
   'transmit'
   'transmission'
   'appcleaner'
@@ -48,7 +42,11 @@ declare -a brew_cask_apps=(
   'betterzip'
   'webpquicklook'
   'suspicious-package'
-  'qlvideo'
+  'qlvideo',
+  'cloudapp',
+  'local-by-flywheel',
+  'microsoft-office',
+  'tower',
 )
 
 for app in "${brew_cask_apps[@]}"; do
