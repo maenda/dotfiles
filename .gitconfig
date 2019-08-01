@@ -1,15 +1,26 @@
 [user]
-	name = Your Name
-	email = your@email.com
+	email = maenda@pixelunion.net
+	name = Maenda Fortier
+[push]
+	default = current
+[merge]
+    tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+[diff]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
 [core]
-	excludesfile = $HOME/.gitignore_global
-[difftool "sourcetree"]
-	cmd = code -n -w -d \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = code -n -w \"$MERGED\"
-	trustExitCode = true
-[commit]
-	template = $HOME/.stCommitMsg
+	excludesfile = /Users/m/.gitignore_global
+	editor = code --wait
 [alias]
-	reset-permissions = !git diff -p -R --no-color | grep -E \"^(diff|(old|new) mode)\" --color=never | git apply
+  # View abbreviated SHA, description, and history graph of the latest 20 commits
+  l = log --pretty=oneline -n 20 --graph --abbrev-commit
+  ll = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(yellow)%h%C(reset) %C(dim)%ar %an %d%C(reset)%n%s%n' --all
+
+  # Short form alias
+  a = add
+  aa = add .
+  c = commit
+  ch = checkout
